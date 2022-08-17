@@ -38,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
 
   // Fallback route for handling 404s
   { path: '/:pathMatch(.*)*', name: '404', component: () => import('../views/Error404.vue') },
+  {
+    path: '/image-uploader',
+    name: 'image-uploader-show-case',
+    component: () => import('../views/ImageUploaderShowCase.vue'),
+  },
 ];
 
 const router = createRouter({

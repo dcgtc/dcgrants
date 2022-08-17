@@ -161,9 +161,9 @@ import { computed, defineComponent, ref } from 'vue';
 import BaseHeader from 'src/components/BaseHeader.vue';
 import InputRow from 'src/components/InputRow.vue';
 import BaseInput from 'src/components/BaseInput.vue';
-import BaseImageUpload from 'src/components/BaseImageUpload.vue';
 import BaseTextarea from 'src/components/BaseTextarea.vue';
 import TransactionStatus from 'src/components/TransactionStatus.vue';
+import BaseImageUpload from 'src/components/BaseImageUpload.vue';
 // --- Store ---
 import useWalletStore from 'src/store/wallet';
 // --- Methods and Data ---
@@ -288,10 +288,10 @@ export default defineComponent({
   components: {
     BaseHeader,
     BaseInput,
-    BaseImageUpload,
     BaseTextarea,
     InputRow,
     TransactionStatus,
+    BaseImageUpload,
   },
   setup() {
     return { ...useNewGrant() };
